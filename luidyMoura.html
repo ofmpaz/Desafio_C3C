@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LuidyMoura</title>
+</head>
+<script>
+    function luidyMoura(numero) {
+        let resultado = [];
+        for (let i = 1; i <= numero; i++) {
+            if (i % 5 == 0 && i % 9 == 0) {
+                resultado.push("LuidyMoura");
+            } else if (i % 5 == 0) {
+                resultado.push("Luidy");
+            } else if (i % 9 == 0) {
+                resultado.push("Moura");
+            } else {
+                resultado.push(i);
+            }
+
+        }
+        return resultado;
+    }
+    console.log(luidyMoura(45));
+</script>
+
+<body>
+
+</body>
+
+</html>

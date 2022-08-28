@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaskara</title>
+    <script>
+        function bhaskara(ax2, bx, c) {
+            const delta = bx ** 2 - 4 * ax2 * c;
+            if (delta < 0) {
+                return "Delta negativo";
+            }
+            const x1 = (-bx + Math.sqrt(delta)) / (2 * ax2);
+            const x2 = (-bx - Math.sqrt(delta)) / (2 * ax2);
+            return [x1, x2];
+        }
+        bhaskara(3, -5, 12);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
